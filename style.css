@@ -1,0 +1,295 @@
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #cfc9c938;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Lora', serif;
+    color: #143774;
+    font-weight: 400;
+    margin: 0;
+}
+
+h4 {
+    margin-top: 2px;
+    font-size: .75rem;
+    color: #1792d2;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav li a {
+    font-size: 1rem;
+    color: #707070;
+    text-decoration: none;
+    padding: .25em 0;
+    font-weight: 700;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current a {
+    border-bottom: 1px solid #707070;
+}
+
+.current a:hover {
+    color: #707070;
+}
+
+@media (max-width:675px) {
+    .container-nav {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: .5em 0;
+    }
+}
+
+
+/*main content*/
+
+.content {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    color: #143774;
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #1792D2;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+footer {
+    background-color: #143774;
+    margin: 0;
+    text-align: center;
+    padding: 25px;
+    color: #efefefa9;
+}
+
+footer p {
+    margin: 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+.continueReading {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #1792D2;
+    text-transform: uppercase;
+}
+
+.continueReading:hover,
+.continueReading :focus {
+    text-decoration: underline;
+    color: #143774;
+}
+
+.imgInfo {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.75rem;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.76);
+    margin: 2em 0;
+}
+
+.imInfo {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.75rem;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+.blueText {
+    color: #1792D2;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+
+/*main */
+
+main {
+    width: 70%;
+}
+
+.featured {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+.homepage {
+    display: flex;
+}
+
+.articleImg img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    object-fit: cover
+}
+
+
+/*aside*/
+
+aside {
+    width: 25%;
+}
+
+.recentPostsBar,
+.aboutMe {
+    border: 20px solid #efefef;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.recentPostsBar {
+    margin-bottom: 2em;
+}
+
+.recentposts {
+    border-bottom: 1px solid #707070;
+    margin-top: 1em;
+}
+
+.recentposts:last-child {
+    border-bottom: 0;
+}
+
+.recentPostsBar h2,
+.aboutMe h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.recentPostsBar h3,
+.aboutMe h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 0.80rem;
+}
+
+.recentposts img,
+.aboutMe img {
+    width: 80%;
+    height: 150px;
+    object-fit: cover
+}
+
+@media (max-width:675px) {
+    .homepage {
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    main {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .articleImg img {
+        width: 100%;
+        height: 300px;
+        margin-right: 10px;
+        object-fit: cover
+    }
+    .content {
+        flex-direction: column;
+    }
+    .recentposts img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover
+    }
+    .aboutMe img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover
+    }
+    .recentPostsBar,
+    .aboutMe {
+        text-align: start;
+    }
+    .recentposts h3 {
+        padding-bottom: 1.5em;
+        border-bottom: 1px solid #70707067;
+    }
+    .recentposts img {
+        margin-top: 1em;
+    }
+}
